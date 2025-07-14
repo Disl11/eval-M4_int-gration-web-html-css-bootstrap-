@@ -1,0 +1,590 @@
+
+
+/* ================== GENERAL ===================== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =============== Navs ================= */
+
+
+/* nav 1 with button  */
+.ul1{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1%;
+    
+}
+
+.icon-left{
+    margin-left: 8px;
+    font-size: 1.5rem;
+}
+
+.icon-rigth{
+    margin-right: 8px;
+    font-size: 1.5rem;
+}
+
+.MD{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.MD button {
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.MD button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* nav 2  */
+
+
+.ul2{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 10px;
+}
+
+/* nav bar 3 */
+
+.ul3{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 10px;
+}
+
+.ul3 a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* nav 3 hover */
+
+.ul3 li:hover {
+    background-color: black;
+}
+
+.ul3 li:hover a {
+    color: white;
+}
+
+.li1{
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.li0{
+    border: 2px solid black;
+    padding: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* ================ Title ====================== */
+
+#title{
+    display: flex;
+    justify-content: space-around;
+    padding:  5px;
+}
+
+
+/* =============== main ==================== */
+
+/* general sections */
+
+.sections{
+    margin: 10px;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section1,  .section3, .section4{
+    border: 3px solid black;
+    margin: 10px;
+    width: 48%;
+}
+
+.title4, .title3, .title1{
+    margin: 10px;
+    font-size: 1.5rem;
+    padding: 10px;
+
+}
+
+
+
+/* section 1  cordonnés*/
+
+.section1{
+    display: flex;
+    flex-direction: column;
+}
+
+.box1{
+    margin: 10px;
+}
+
+
+
+/* section 2 urgent and message */
+
+.section2{
+    width: 48%;
+    margin: 10px;
+    width: 48%;
+}
+
+.urgent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px  dashed black; 
+    border-radius: 5px;
+    padding: 10px;
+    height: 28%;
+    margin: 2px;
+    gap: 20px;
+}
+
+.icone1{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MC{
+    display: flex;
+    justify-content: space-between;
+    height: 58%;
+}
+
+.messagerie{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 96%;
+    width: 30%  ;
+    border: 3px solid black;
+    margin: 5px;
+}
+
+.icone2{
+    font-size: 2rem;
+}
+
+
+
+.contact-pro{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+    border: 3px solid black;
+    height: 88%;
+    margin: 5px;
+    padding: 5px ;
+    text-align: left;
+    gap: 5px;
+}
+
+
+.titleH4{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* section 3 table */
+.table {
+    width: 97%;
+    border-collapse: collapse;
+    margin: 10px;
+    border: 3px solid black;
+}
+
+.table th, .table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.table th {
+    background-color: #eee;
+}
+
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box4{
+    margin: 10px;
+}
+
+
+
+
+/* =============== media query mobile ================ */
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    /* General section */
+
+    .section1, .section2, .section3, .section4 {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* navs */
+    .ul3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .ul1 {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+
+    }
+
+    .ul2 li, .ul3 li {
+        margin: 5px 0;
+    }
+
+    .li1, .li0 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    /* section 2 urgent and messages */
+
+    .messagerie, .contact-pro {
+        width: 100%;
+    }
+
+    .title1, .title3, .title4, .titleH4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* section 3 table */
+
+    .table th, .table td {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+    
+    .MD form {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .MD {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+
+
+
+
+
+
+/* tablette */
+
+
+@media screen and (max-width: 992px) {
+
+    /* Général */
+    body {
+        padding: 10px;
+    }
+
+    .section1, .section2, .section3, .section4 {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Navs */
+    .ul1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+        padding: 1%;
+    }
+
+    .ul2 li,
+    .ul3 li {
+        margin: 5px 0;
+    }
+
+    .MD{
+        display: flex;
+    }
+
+    .ul3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .li1,
+    .li0 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    /* Section 2  urgent et messagerie */
+    .messagerie,
+    .contact-pro {
+        width: 100%;
+    }
+
+    .title1,
+    .title3,
+    .title4,
+    .titleH4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+
+
+    /* Section 3 table  */
+
+
+    .table th,
+    .table td {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    /* Déconnexion  bouton + structure MD */
+    .MD {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .MD form {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .MD button {
+        width: 100%;
+        max-width: 200px;
+        background-color: white;
+        border: 2px solid black;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .MD button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    /* Icônes */
+    i {
+        font-size: 1.2rem;
+        margin-left: 6px;
+    }
+}
+
+
+
+
+
+/* desktop */
+
+@media screen and (max-width: 1200px) {
+
+    /* Général */
+    body {
+        padding: 15px;
+    }
+
+    .section1, .section2, .section3, .section4 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Navigation */
+    .ul1 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .ul2 li, .ul3 li {
+        margin: 8px 0;
+        font-size: 0.95rem;
+    }
+
+    .ul3 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .li1, .li0 {
+        width: 100%;
+    }
+
+    #title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Messages and contact */
+    .messagerie,
+    .contact-pro {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .title1,
+    .title3,
+    .title4,
+    .titleH4 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    /* Tableau */
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table th,
+    .table td {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    /* Zone Déconnexion */
+    .MD {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .MD form {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+
+    .MD button {
+        width: 100%;
+        max-width: 220px;
+        background-color: white;
+        border: 2px solid black;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .MD button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    /* Icônes */
+    i {
+        font-size: 1.2rem;
+        margin-left: 6px;
+    }
+}
